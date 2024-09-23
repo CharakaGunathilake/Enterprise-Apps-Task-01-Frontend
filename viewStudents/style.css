@@ -1,0 +1,13 @@
+th{
+    background-color: rgba(51, 71, 173, 0.589);
+    border: 1px solid black;
+    padding: 15px 0px 15px;
+    text-align: center;
+}
+table,
+td {
+    background-color: rgba(202, 242, 242, 0.199);
+    border: 1px solid black;
+    padding: 5px 0px 5px;
+    text-align: center;
+}
