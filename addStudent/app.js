@@ -12,6 +12,7 @@ function addStudent() {
     // ---------------------------------------------------------------------
     const myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
+
     const raw = JSON.stringify({
         "address": guardianAddress,
         "age": studentAge,
@@ -30,9 +31,9 @@ function addStudent() {
 
     fetch("http://localhost:8080/student/add", requestOptions)
         .then((response) => response.text())
-        .then((result) => alert(result))
-        .catch((error) => {
-            alert("Student not registered!" + error);
-        }
-        );
+        .then((result) => {
+            console.log(result)
+
+        })
+        .catch((error) => console.error(error));
 }
